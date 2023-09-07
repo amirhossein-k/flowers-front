@@ -1,0 +1,14 @@
+.ask-container{
+    --bs-gutter-x: 0rem;
+}
+.ask-container .box-ask-container{
+    padding: 15px;
+}
+.ask-container .box-ask-container .title{
+   font-size: 20px;
+   font-weight: 400;
+}
+.ask-container .box-ask-container .para{
+    font-size: 16px;
+    font-weight: 400;
+}

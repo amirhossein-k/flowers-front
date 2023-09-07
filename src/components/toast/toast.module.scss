@@ -1,0 +1,46 @@
+.my_toast{
+
+    position: fixed;
+    width: 21%;
+    left: 39%;
+    background: #6edfff;
+    margin: 0 auto;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    overflow: hidden;
+    // display: none;
+    z-index: 999;
+
+    .my_title{
+   
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       padding: 10px;
+       font-size: 20px;
+       font-weight: 500;
+   }
+   .loading{
+       background-color: #00a5e0;
+       /* width: 5px; */
+       position: relative;
+       height: 6px;
+       &:active{
+
+        span{
+
+            animation: Load 2s 1 linear ;
+            position: absolute;
+            display: inline;
+            height: 100%;
+            background-color: #f6f6f6;
+            left: 0;
+        }
+    }
+}
+}
+
+
+
+
+

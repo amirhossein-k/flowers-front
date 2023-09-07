@@ -1,0 +1,81 @@
+.formbuy_datail{
+    gap: 50px;
+    position: relative;
+    z-index:1;
+}
+.edite{
+    display: flex;
+    justify-content: end;
+    position: absolute;
+    left: -4px;
+    top: 6px;
+    .normal{
+        cursor: pointer;
+        // background: #03f4f8;
+        padding: 8px;
+        outline: #4ae6e2 solid;
+        background-color: cyan;
+        box-shadow: 0px 0px 5px;
+        border-radius: 4px;
+        transition:  0.3s ease-in-out;
+        &:hover{
+            outline: #d5d5d5db solid;
+        background-color: rgb(6, 215, 215);
+        }
+    }
+    .cancel{
+        cursor: pointer;
+        background:#e60000;
+        padding: 10px;
+        border-radius: 5px;
+        color: #fff;
+        outline:#f02b2bdb solid;
+        box-shadow: 0px 0px 5px;
+        transition:  0.3s ease-in;
+        &:hover{
+            outline:#d5d5d5db solid;
+            background:#ca3232eb;
+        }
+    }
+}
+
+.item_child{
+    display: flex;
+     justify-content: center;
+     align-items: center;
+     :focus{outline: none; border-radius: 8px;}
+
+     /* necessary to give position: relative to parent. */
+     input[type="text"]{font: 15px/24px 'Muli', sans-serif; color: #333; width: 100%; box-sizing: border-box; letter-spacing: 1px;  border-radius: 8px;}
+     
+     :focus{outline: none; border-radius: 8px;}
+     input[type="text"]{font: 15px/24px "Lato", Arial, sans-serif; color: #333; width: 100%; box-sizing: border-box; letter-spacing: 1px; border-radius: 8px;}
+    position: relative;
+     .effect_19{
+        padding: 9px 7px;
+        border-radius: 8px;
+        background: #e0e0e0;
+        border: none;
+        font: 16px/24px "Lato", Arial, sans-serif;
+        color: #333;
+        width: 100%;
+        box-sizing: border-box;
+        letter-spacing: 1px;
+     }
+     .effect_19 ~ .focus_border:before,
+     .effect_19 ~ .focus_border:after{content: ""; position: absolute; top: -1px; left: 50%; width: 0; height: 2px; background-color: #03f4f8; transition: 0.4s; border-radius: 8px;}
+     .effect_19 ~ .focus_border:after{top: auto; bottom: 0;}
+     .effect_19 ~ .focus_border i:before,
+     .effect_19 ~ .focus_border i:after{content: ""; position: absolute; top: 50%; left: 0; width: 2px; height: 0; background-color: #03f4f8; transition: 0.6s; border-radius: 8px;}
+     .effect_19 ~ .focus_border i:after{left: auto; right: 0;}
+     .effect_19:focus ~ .focus_border:before,
+     .effect_19:focus ~ .focus_border:after,
+     .has-content.effect_19 ~ .focus_border:before,
+     .has-content.effect_19 ~ .focus_border:after{left: 0; width: 100%; transition: 0.4s;  border-radius: 8px;}
+     .effect_19:focus ~ .focus_border i:before,
+     .effect_19:focus ~ .focus_border i:after,
+     .has-content.effect_19 ~ .focus_border i:before,
+     .has-content.effect_19 ~ .focus_border i:after{top: -1px; height: 100%; transition: 0.6s; border-radius: 8px;}
+     .effect_19 ~ label{position: absolute; left: -2px; width: 100%; top: 5px; color: #aaa; transition: 0.3s; z-index: -1; letter-spacing: 0.5px;}
+     .effect_19:focus ~ label, .has-content.effect_19 ~ label{top: -22px;font-size: 15px;font-weight: 500; left: 0;  color: #03bff8; transition: 0.3s; border-radius: 8px;}
+}

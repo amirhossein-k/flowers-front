@@ -1,0 +1,112 @@
+.ProductCard_container{
+
+    .nav{
+        width: 100%;
+        height: 100%;
+        .title{
+            padding: 16px;
+        }
+        ul{
+            display: flex;
+            flex-direction: column;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            // 
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            background: #55adcf;
+            color: #fff;
+            li{
+                padding: 10px 5px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+                box-shadow: inset 0px -1px 2px 0px rgba(0,0,0,0.3);
+                // 
+                width: 100%;
+                .header{
+                    display: flex;
+                    flex-direction: row;
+                    width: 100%;
+                    justify-content: space-evenly;
+                    align-items: center;
+                    padding: 5px;
+
+                    .title{
+                        padding: 0;
+                        width: 50%;
+                        // 
+                        display: flex;
+                        justify-content: center;
+
+                    }
+                    .icon{
+                        width: 30%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        cursor: pointer;
+                    }
+                }
+                .body{
+                    width: 100%;
+                    ---display: 'flex';
+                    display: var(---display);
+                    justify-content: center;
+                    align-items: center;
+                    // 
+                    border-radius: 5px;
+                    padding: 13px;
+                    background: #fbfbfbf0;
+                    color: #002d49;
+                    
+                    .inputcheck{
+                        padding: 5px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        box-shadow: inset -1px -1px 2px rgb(34 102 122);
+
+                        input[type="checkbox"]{
+                            appearance: none;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                        }
+                        input[type="checkbox"]::before {
+                            content: "";
+                            width: 0.65em;
+                            height: 0.65em;
+                            transform: scale(0);
+                            transition: 120ms transform ease-in-out;
+                            box-shadow: inset 1em 1em rgb(72 147 191);
+                          }
+                          input[type="checkbox"]::after {
+                            content: "";
+                            position: absolute;
+                            width: 0.90em;
+                            height: 0.90em;
+                            border: 1px solid;
+                            transform: scale(1);
+                            transition: 120ms transform ease-in-out;
+                            // box-shadow: inset 1em 1em rgba(59, 98, 171, 0.857);
+                          }
+                          
+                          input[type="checkbox"]:checked::before {
+                            transform: scale(1);
+                          }
+                          input[type="checkbox"]:checked::after {
+                            // transform: scale(1);
+                            // width: 0em;
+                            // height: 0em;
+                            // display: none;
+                          }
+                    }
+                }
+            }
+        }
+    }
+}

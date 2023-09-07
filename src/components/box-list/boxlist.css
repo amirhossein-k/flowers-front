@@ -1,0 +1,46 @@
+.box-outer{
+    --bs-gutter-x:0rem;
+}
+
+.body-boxlist{
+    width: 100%;
+    height: 110px;
+    margin: 0 auto;
+}
+.body-boxlist .cal-boxlist{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+}
+.body-boxlist .title-boxlist{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+
+}
+.box-outer .pseudo-boxlist{
+    background-color: rgb(237 237 237);
+    border: 1px black dotted;
+}
+.box-outer .pseudo-boxlist:nth-child(2n){
+color: black;
+
+
+
+}
+.box-outer .pseudo-boxlist:nth-child(2n) .body-boxlist .title-boxlist{
+color: black;
+
+
+
+}
+.box-outer .pseudo-boxlist:nth-child(2n) .body-boxlist .cal-boxlist{
+color: black;
+
+
+
+}

@@ -1,0 +1,62 @@
+.headercategory{
+    flex-direction: row-reverse;
+    width: 100%;
+    /* height: 20vh; */
+    --bs-gutter-x: 0; 
+     --bs-gutter-y: 0;
+}
+.headercategory .col-12{
+  
+    height: 100%;
+}
+.headercategory .col-md-9{
+  
+    height: 200px;
+}
+.headercategory .col-12 .parent-box{
+  
+    height: 100%;
+}
+.headercategory .col-12 .parent-box2{
+    height: 100%;
+   background: url('../../../header-asl.jpg');
+
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.headercategory .col-md-9 .parent-box2 .menu{
+    /* height: 200px; */
+    color: #fff;
+    /* display: flex; */
+    gap: 5px;
+    position: relative;
+    flex-direction: row;
+    top: 94px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.headercategory .col-12 .parent-box2 .menu a{
+   padding: 15px 20px;
+   background-color: #00ffffc3;
+   border-radius: 5px;
+   padding: 8px 19px;
+   cursor: pointer;
+    margin: 0 6px;
+}
+.headercategory .parent-box {
+    height: 100%;
+    position: relative;
+    /* width: 100%; */
+}
+.headercategory .parent-box .box-img{
+    height: 200px;
+    width: 100%;
+}
+.headercategory .parent-box .box-img img{
+    height: 100%;
+    width: 100%;
+}

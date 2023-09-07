@@ -1,0 +1,278 @@
+.form-buy .formbuy-container{
+    --bs-gutter-x: 0;
+    --bs-gutter-y: 0;
+
+}
+.form-buy .formbuy-container .form-container .form{
+    --bs-gutter-x: 0;
+    --bs-gutter-y: 0;
+    padding: 10px;
+    background-color: rgba(255, 255, 255,0.7);
+
+
+}
+.form-buy .formbuy-container .form-container .form .form_cotrol{
+position: relative;
+display: block;
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--bs-body-color);
+    background-color: var(--bs-body-bg);
+    background-clip: padding-box;
+    border: var(--bs-border-width) solid var(--bs-border-color);
+    appearance: none;
+    border-radius: var(--bs-border-radius);
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+
+}
+.form-buy .formbuy-container .form-container .form .form_cotrol:focus  {
+    
+    color: var(--bs-body-color);
+    background-color: var(--bs-body-bg);
+    border-color: #86b7fe;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgba(13,110,253,0.25);
+    /* border:2px solid black; */
+    border-width: 3px;
+    animation: border_ani 2s ease  infinite;
+  
+   
+    box-shadow: 1px 1px 5px 0px rgba(211, 211, 211, 0.353);
+
+    border-color: transparent;
+
+}
+
+@keyframes  border_ani{
+    0%{
+        border-bottom-color: rgb(0, 81, 255);
+        border-left-color: rgb(228, 228, 228);
+        border-top-color: rgb(228, 228, 228);
+        border-right-color: rgb(228, 228, 228);
+        box-shadow: 1px 1px 5px 0px rgba(211, 211, 211, 0.653);
+    }
+    100%{
+        border-bottom-color: rgb(50, 205, 236);
+    }
+}
+
+
+.form-buy .formbuy-container .form-container .form .box-dahande{
+/* background-color: rgb(255, 255, 255); */
+/* margin:10px 0; */
+padding: 11px 10px;
+
+}
+
+.form-buy .formbuy-container .form-container .form .box-dahande .title{
+    font-size: 20px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+}
+/*  */
+.form-buy .formbuy-container .form-container .form .box-girandeh {
+    /* background-color: rgb(255, 255, 255); */
+
+    /* margin:10px 0; */
+    /* padding:10px 5px; */
+    margin: 30px 10px;
+    z-index: 1;
+    position: relative;
+}
+
+.form-buy .formbuy-container .form-container .form .box-girandeh .title{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+
+/*  */
+
+.final_list{
+    --bs-gutter-x: 0;
+    --bs-gutter-y: 0;
+background-color: rgb(228, 228, 228);
+border-radius: 5px;
+
+}
+.final_list .header{
+    background-color: rgba(180, 224, 252, 0.696);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+}
+.final_list .detail_cart{
+    
+}
+.final_list .detail_cart .detail_box{
+background-color: rgb(228, 228, 228);
+display: flex;
+justify-content: space-between;
+padding: 10px 15px 10px 22px;
+align-items: center;
+}
+
+.final_list .detail_cart .total_1{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 15px 10px 22px;
+    align-items: center;
+}
+.final_list .detail_cart .transfer{
+    display: flex;
+    justify-content:right;
+    padding: 10px 15px 10px 22px;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 0 1px rgb(175, 178, 178);
+    background-color: rgba(232, 231, 231, 0.386);
+    --bs-gutter-x: 0;
+}
+.final_list .detail_cart .transfer .box_transfer{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.final_list .detail_cart .transfer span{
+    display: flex;
+    justify-content:right;
+    padding: 10px 15px 10px 22px;
+    align-items: center;
+}
+.final_list .detail_cart .transfer input{
+    width: 20px;
+    height: 20px;
+}
+.final_list .detail_cart .total_2{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 15px 10px 22px;
+    align-items: center;
+}
+.final_list .detail_cart .total_2 .invalid{
+  color: rgb(208, 103, 103);
+  font-size: 16px;
+}
+.final_list .detail_cart .total_2 span{
+  margin: 0 5px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.final_list .calender{
+    /* margin: 20px 8px 20px 0; */
+}
+
+.final_list .calender .title{
+    
+    font-size: 17px;
+    font-weight: 500;
+}
+.final_list .calender .calender_box{
+    padding: 10px;
+   /* background-color: aqua; */
+   --bs-gutter-x: 0rem;
+}
+.final_list .calender .calender_box .box{
+    padding: 10px;
+    background-color: rgb(200, 219, 235);
+    margin: 1px 1px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.final_list .calender .calender_box .box:hover{
+  background-color: rgb(199, 201, 201);
+}
+.final_list .calender .calender_box .box.active{
+  background-color: rgb(199, 201, 201);
+}
+.final_list .calender .calender_box .box .total span{
+   padding: 0 1px;
+}
+.final_list .calender .time{
+    /* background-color: aqua; */
+    padding: 10px 15px 10px 22px;
+
+}
+.final_list .calender .time .time_box{
+   display: flex;
+   align-items: center;
+   /* justify-content: center; */
+
+}
+.final_list .calender .time .time_box input{
+   width: 15px;
+   height: 15px;
+
+}
+
+.final_list .payment{
+    
+}
+.final_list .payment .payment_box{
+
+    border-bottom: 1px solid;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 10px 10px 10px 22px;
+    gap: 10px;
+    background-color: rgba(215, 215, 215, 0.467);
+}
+.final_list .payment .payment_box input{
+
+    width: 15px;
+    height: 15px;
+    /* margin-left: ; */
+   
+}
+
+.final_list .rul{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 10px 10px 10px 22px;
+    gap: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    
+}
+
+.final_list .rul .rull{
+ color: rgb(0, 98, 255);
+
+    
+}
+.final_list .submitt{
+margin: 10px 0;
+display: flex;
+justify-content: center;
+align-items: center;
+    
+}
+.final_list .submitt button{
+ border: none !important;
+ outline: none !important;
+ background-color: rgb(63, 161, 221);
+ padding: 15px 20px;
+ border-radius: 10px;
+font-size: 17px;
+font-weight: 500;
+color: #fff;
+box-shadow: 0px 0px 5px rgb(104, 190, 243);
+transition: all 0.2s ease-in;
+}
+.final_list .submitt button:hover{
+
+box-shadow: 0px 0px 8px rgba(106, 190, 243, 0.873),
+0px 0px 12px rgb(45, 133, 234);
+    
+}

@@ -1,0 +1,19 @@
+
+
+.my_toast span{
+    animation: Load 2s 1 linear ;
+         position: absolute;
+         display: inline;
+         height: 100%;
+         background-color: #f6f6f6;
+         left: 0;
+        }
+        @keyframes Load {
+            0%{
+                width: 100%;
+            }
+            100%{
+        
+                width: 0%;
+            }
+        }

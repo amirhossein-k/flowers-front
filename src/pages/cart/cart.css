@@ -1,0 +1,21 @@
+main .price{
+    /* width: 50%; */
+}
+
+main .other-things .title-outer-things{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+
+}
+.other-things .inner-wrapper {
+    display: flex;
+    padding-bottom: 10px;
+    height: 100%;
+    /* margin-left: 0; */
+    --bs-gutter-x: 0 !important;
+    --bs-gutter-y: 0;
+    color: rgb(0, 0, 0) !important;
+    justify-content: center;
+}

@@ -1,0 +1,115 @@
+.address_container{
+    z-index:1;
+
+    .edite{
+        display: flex;
+        justify-content: end;
+        position: absolute;
+        left: 12px;
+        top: 6px;
+       
+
+        .normal{
+            cursor: pointer;
+            // background: #03f4f8;
+            padding: 10px;
+            outline: #4ae6e2 solid;
+            background-color: cyan;
+            box-shadow: 0px 0px 5px;
+            border-radius: 4px;
+            transition:  0.3s ease-in-out;
+            &:hover{
+                outline: #d5d5d5db solid;
+            background-color: rgb(6, 215, 215);
+            }
+        }
+        .cancel{
+            cursor: pointer;
+            background:#e60000;
+            padding: 10px;
+            border-radius: 5px;
+            color: #fff;
+            outline:#f02b2bdb solid;
+            box-shadow: 0px 0px 5px;
+            transition:  0.3s ease-in;
+            &:hover{
+                outline:#d5d5d5db solid;
+                background:#ca3232eb;
+            }
+        }
+    }
+
+    .container_item{
+        gap: 40px;
+
+        .i{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+        }
+        .item_child{
+            gap: 12px;
+
+            .item_child_box{
+                gap: 10px;
+            }
+        }
+        .item_child_input{
+            display: flex;
+             justify-content: center;
+             align-items: center;
+             :focus{outline: none;}
+
+             /* necessary to give position: relative to parent. */
+             input[type="text"]{font: 15px/24px 'Muli', sans-serif; color: #333; width: 100%; box-sizing: border-box; letter-spacing: 1px;}
+             
+             :focus{outline: none;}
+             input[type="text"]{font: 15px/24px "Lato", Arial, sans-serif; color: #333; width: 100%; box-sizing: border-box; letter-spacing: 1px;}
+            position: relative;
+             .effect_19 ~ .focus_border:before,
+             .effect_19 ~ .focus_border:after{content: ""; position: absolute; top: -1px; left: 50%; width: 0; height: 2px; background-color: #03f4f8; transition: 0.4s;}
+             .effect_19 ~ .focus_border:after{top: auto; bottom: 0;}
+             .effect_19 ~ .focus_border i:before,
+             .effect_19 ~ .focus_border i:after{content: ""; position: absolute; top: 50%; left: 0; width: 2px; height: 0; background-color: #03f4f8; transition: 0.6s;}
+             .effect_19 ~ .focus_border i:after{left: auto; right: 0;}
+             .effect_19:focus ~ .focus_border:before,
+             .effect_19:focus ~ .focus_border:after,
+             .has-content.effect_19 ~ .focus_border:before,
+             .has-content.effect_19 ~ .focus_border:after{left: 0; width: 100%; transition: 0.4s;}
+             .effect_19:focus ~ .focus_border i:before,
+             .effect_19:focus ~ .focus_border i:after,
+             .has-content.effect_19 ~ .focus_border i:before,
+             .has-content.effect_19 ~ .focus_border i:after{top: -1px; height: 100%; transition: 0.6s;}
+             .effect_19 ~ label{position: absolute; left: -2px; width: 100%; top: 10px; color: #aaa; transition: 0.3s; z-index: -1; letter-spacing: 0.5px;}
+             .effect_19:focus ~ label, .has-content.effect_19 ~ label{top: -22px;font-size: 15px;font-weight: 500; left: 0;  color: #03bff8; transition: 0.3s;}
+        }
+    }
+    .container_botton{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        
+        button{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 5px 29px;
+            border: none;
+            outline: #4ae6e2 solid;
+            background-color: cyan;
+            box-shadow: 0px 0px 5px;
+            border-radius: 1px;
+            transition: background-color 0.3s ease-in;
+        }
+        button:hover{
+            background-color: rgb(12, 206, 206);
+            outline: rgb(176 197 217 / 70%) solid;
+            transition: outline 0.2s ease-out;
+        }
+    }
+}
+
+.cursor{
+    cursor: default;
+}

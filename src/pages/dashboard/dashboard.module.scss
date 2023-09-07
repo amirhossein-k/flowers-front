@@ -1,0 +1,27 @@
+
+
+    .main{
+        // display: block;
+        @media (max-width: 768px) {
+            display: block;
+        }
+        height: 100%;
+        min-height: 100vh;
+        box-shadow: 0 0px 10px rgba(123, 138, 146, 0.712);
+        background: transparent;
+        .container_sidebar{
+           display: block;
+           
+          &.col_lg_2{
+            @media (min-width: 1224px){
+                flex: 0 0 auto !important;
+                width: 12.66667% !important;
+            } 
+          }  
+        }
+        
+        
+    }
+
+
+  
